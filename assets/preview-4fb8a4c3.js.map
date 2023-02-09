@@ -1,1 +1,0 @@
-{"version":3,"file":"preview-4fb8a4c3.js","sources":["../../.storybook/preview.js"],"sourcesContent":["export const parameters = {\n  viewMode: 'docs',\n}"],"names":["parameters"],"mappings":"AAAY,MAACA,EAAa,CACxB,SAAU,MACZ"}
