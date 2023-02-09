@@ -1,0 +1,15 @@
+module.exports = {
+  stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
+  addons: ["@storybook/addon-links", "@storybook/addon-essentials", "@storybook/addon-interactions", "@storybook/addon-storysource"],
+  framework: {
+    name: '@storybook/react-vite',
+    options: {}
+  },
+  typescript: {
+    reactDocgen: 'react-docgen'
+  },
+  features: {
+    storyStoreV7: true
+  },
+  staticDirs: ['./public'],
+};
