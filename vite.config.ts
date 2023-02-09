@@ -1,10 +1,12 @@
-import { resolve } from 'path'
-import { defineConfig } from 'vite'
-import dts from 'vite-plugin-dts'
+import { defineConfig } from 'vite';
+import { resolve } from 'path';
+import react from '@vitejs/plugin-react-swc';
+import svgr from 'vite-plugin-svgr';
+import dts from 'vite-plugin-dts';
 
 export default defineConfig({
   define: {
-    global: {},
+    'global': {},
   },
   build: {
     outDir: 'dist',
@@ -15,6 +17,8 @@ export default defineConfig({
     },
   },
   plugins: [
+    react(),
+    svgr(),
     dts(),
   ]
 })

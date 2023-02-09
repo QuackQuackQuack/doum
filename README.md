@@ -8,21 +8,27 @@
 ## Install
 
 ```shell
-npm i ~
+npm i doum
+```
+
+## Guide
+
+```shell
+npm run storybook
 ```
 
 ## Hooks List
 
 - `Language`
-  - [`isEng`](?path=/docs/language-iseng--docs)
-  - [`isKor`](?path=/docs/language-iskor--docs)
+  - [`isEng`](https://quackquackquack.github.io/doum/?path=/docs/introduction--page)
+  - [`isKor`](https://quackquackquack.github.io/doum/?path=/docs/language-iskor--page)
 - `User`
-  - [`isKoResRegNumber`](?path=/docs/user-iskoresregnumber--docs)
+  - [`isKoResRegNumber`](https://quackquackquack.github.io/doum/?path=/docs/user-iskoresregnumber--page)
 - `Web`
-  - [`isEmail`](?path=/docs/web-isemail--docs)
-  - [`isUrl`](?path=/docs/web-isurl--docs)
+  - [`isEmail`](https://quackquackquack.github.io/doum/?path=/docs/web-isemail--page)
+  - [`isUrl`](https://quackquackquack.github.io/doum/?path=/docs/web-isurl--page)
 - `Etc`
-  - [`isSpace`](?path=/docs/etc-isspace--docs)
+  - [`isSpace`](https://quackquackquack.github.io/doum/?path=/docs/etc-isspace--page)
 
 ## Author
 
