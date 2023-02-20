@@ -12,13 +12,13 @@ describe('User|isKoResRegNumber', () => {
     const koResRegNumber7 = '001231-5234567';
     const koResRegNumber8 = '001231-123456A';
 
-    expect(isKoResRegNumber(koResRegNumber)).toEqual(false);
-    expect(isKoResRegNumber(koResRegNumber2)).toEqual(true);
-    expect(isKoResRegNumber(koResRegNumber3)).toEqual(true);
-    expect(isKoResRegNumber(koResRegNumber4)).toEqual(true);
-    expect(isKoResRegNumber(koResRegNumber5)).toEqual(true);
-    expect(isKoResRegNumber(koResRegNumber6)).toEqual(false);
-    expect(isKoResRegNumber(koResRegNumber7)).toEqual(false);
-    expect(isKoResRegNumber(koResRegNumber8)).toEqual(false);
+    expect(isKoResRegNumber(koResRegNumber)).toBeFalsy();
+    expect(isKoResRegNumber(koResRegNumber2)).toBeTruthy();
+    expect(isKoResRegNumber(koResRegNumber3)).toBeTruthy();
+    expect(isKoResRegNumber(koResRegNumber4)).toBeTruthy();
+    expect(isKoResRegNumber(koResRegNumber5)).toBeTruthy();
+    expect(isKoResRegNumber(koResRegNumber6)).toBeFalsy();
+    expect(isKoResRegNumber(koResRegNumber7)).toBeFalsy();
+    expect(isKoResRegNumber(koResRegNumber8)).toBeFalsy();
   });
 });

@@ -12,13 +12,13 @@ describe('Web|isUrl', () => {
     const url7 = 'http://www.google.com';
     const url8 = 'https://192.168.0.1';
 
-    expect(isUrl(url)).toEqual(false);
-    expect(isUrl(url2)).toEqual(false);
-    expect(isUrl(url3)).toEqual(false);
-    expect(isUrl(url4)).toEqual(false);
-    expect(isUrl(url5)).toEqual(true);
-    expect(isUrl(url6)).toEqual(true);
-    expect(isUrl(url7)).toEqual(true);
-    expect(isUrl(url8)).toEqual(true);
+    expect(isUrl(url)).toBeFalsy();
+    expect(isUrl(url2)).toBeFalsy();
+    expect(isUrl(url3)).toBeFalsy();
+    expect(isUrl(url4)).toBeFalsy();
+    expect(isUrl(url5)).toBeTruthy();
+    expect(isUrl(url6)).toBeTruthy();
+    expect(isUrl(url7)).toBeTruthy();
+    expect(isUrl(url8)).toBeTruthy();
   });
 });

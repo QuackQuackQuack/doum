@@ -25,6 +25,7 @@ npm run storybook
 - `User`
   - [`isKoResRegNumber`](https://quackquackquack.github.io/doum/?path=/docs/user-iskoresregnumber--page)
   - [`isKoDriverLicense`](https://quackquackquack.github.io/doum/?path=/docs/user-iskodriverlicense--page)
+  - [`iskozipcode`](https://quackquackquack.github.io/doum/?path=/docs/user-iskozipcode--page)
 - `Web`
   - [`isEmail`](https://quackquackquack.github.io/doum/?path=/docs/web-isemail--page)
   - [`isUrl`](https://quackquackquack.github.io/doum/?path=/docs/web-isurl--page)

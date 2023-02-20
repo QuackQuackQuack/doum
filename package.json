@@ -1,6 +1,6 @@
 {
   "name": "doum",
-  "version": "0.0.1b",
+  "version": "0.0.1d",
   "description": "Helpful JavaScript Library Doum",
   "main": "dist/doum.umd.js",
   "module": "dist/doum.mjs",

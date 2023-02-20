@@ -16,14 +16,14 @@ describe('User|isKoDriverLicense', () => {
     const licensegNumber9 = '22-12-1234567-81';
 
 
-    expect(isKoDriverLicense(licensegNumber)).toEqual(false);
-    expect(isKoDriverLicense(licensegNumber2)).toEqual(true);
-    expect(isKoDriverLicense(licensegNumber3)).toEqual(false);
-    expect(isKoDriverLicense(licensegNumber4)).toEqual(false);
-    expect(isKoDriverLicense(licensegNumber5)).toEqual(false);
-    expect(isKoDriverLicense(licensegNumber6)).toEqual(true);
-    expect(isKoDriverLicense(licensegNumber7)).toEqual(false);
-    expect(isKoDriverLicense(licensegNumber8)).toEqual(false);
-    expect(isKoDriverLicense(licensegNumber9)).toEqual(true);
+    expect(isKoDriverLicense(licensegNumber)).toBeFalsy();
+    expect(isKoDriverLicense(licensegNumber2)).toBeTruthy();
+    expect(isKoDriverLicense(licensegNumber3)).toBeFalsy();
+    expect(isKoDriverLicense(licensegNumber4)).toBeFalsy();
+    expect(isKoDriverLicense(licensegNumber5)).toBeFalsy();
+    expect(isKoDriverLicense(licensegNumber6)).toBeTruthy();
+    expect(isKoDriverLicense(licensegNumber7)).toBeFalsy();
+    expect(isKoDriverLicense(licensegNumber8)).toBeFalsy();
+    expect(isKoDriverLicense(licensegNumber9)).toBeTruthy();
   });
 });

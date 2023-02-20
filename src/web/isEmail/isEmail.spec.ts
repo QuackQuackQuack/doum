@@ -11,12 +11,12 @@ describe('Web|isEmail', () => {
     const email6 = 'test@test.com';
     const email7 = 'a-b.c@t-e-s-t.co.kr.uk';
 
-    expect(isEmail(email)).toEqual(false);
-    expect(isEmail(email2)).toEqual(false);
-    expect(isEmail(email3)).toEqual(false);
-    expect(isEmail(email4)).toEqual(true);
-    expect(isEmail(email5)).toEqual(true);
-    expect(isEmail(email6)).toEqual(true);
-    expect(isEmail(email7)).toEqual(true);
+    expect(isEmail(email)).toBeFalsy();
+    expect(isEmail(email2)).toBeFalsy();
+    expect(isEmail(email3)).toBeFalsy();
+    expect(isEmail(email4)).toBeTruthy();
+    expect(isEmail(email5)).toBeTruthy();
+    expect(isEmail(email6)).toBeTruthy();
+    expect(isEmail(email7)).toBeTruthy();
   });
 });
