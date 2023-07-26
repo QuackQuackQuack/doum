@@ -1,0 +1,46 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Web/isEmail" />
+
+# isEmail
+
+Check whether the string is Email type or not and return it.  
+문자열이 Email 타입인지 아닌지를 확인 후 반환합니다.
+
+### Example
+
+```js
+import { isEmail } from 'doum';
+
+const email = '';
+const email2 = '123456';
+const email3 = 'abcdefg';
+const email4 = 'test@test.co.jp';
+const email5 = 'test-test@test.co.kr';
+const email6 = 'test@test.com';
+const email7 = 'a-b.c@t-e-s-t.co.kr.uk';
+
+console.log('email', isEmail(email)); // email false
+console.log('email2', isEmail(email2)); // email2 false
+console.log('email3', isEmail(email3)); // email3 false
+console.log('email4', isEmail(email4)); // email4 true
+console.log('email5', isEmail(email5)); // email5 true
+console.log('email6', isEmail(email6)); // email6 true
+console.log('email7', isEmail(email7)); // email7 true
+```
+
+### Reference
+
+```js
+function isEmail(email: string): boolean {}
+```
+
+### Importing
+
+```js
+import { isEmail } from 'doum';
+```
+
+### Arguments
+
+- **email** _`string`_

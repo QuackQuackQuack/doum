@@ -1,0 +1,44 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Language/isEng" />
+
+# isEng
+
+Check if the string is in English only and return it  
+문자열이 영어로만 되있는지 확인 후 반환합니다.
+
+### Example
+
+```js
+import { isEng } from 'doum';
+
+const contents = '';
+const contents2 = '123456';
+const contents3 = 'abcdefg';
+const contents4 = 'AbcdefG';
+const contents5 = '1abcdef1';
+const contents6 = 'ㅁabcdㅂ';
+
+console.log('contents', isEng(contents)); // contents false
+console.log('contents2', isEng(contents2)); // contents2 false
+console.log('contents3', isEng(contents3)); // contents3 true
+console.log('contents4', isEng(contents4)); // contents4 true
+console.log('contents5', isEng(contents5)); // contents5 false
+console.log('contents6', isEng(contents6)); // contents6 false
+```
+
+### Reference
+
+```js
+function isEng(contents: string): boolean {}
+```
+
+### Importing
+
+```js
+import { isEng } from 'doum';
+```
+
+### Arguments
+
+- **contents** _`string`_

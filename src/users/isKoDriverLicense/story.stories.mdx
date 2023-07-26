@@ -1,0 +1,61 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="User/isKoDriverLicense" />
+
+# isKoDriverLicense
+
+a Korean Driver's License  
+한국 운전면허증 번호
+
+- AA-BB-CCCCCC-DE
+- AA: First issue area 최초 발급지역
+  - Seoul 서울(11), Busan 부산(12), Gyeonggi 경기(13), Gangwon 강원(14), North Chungcheong 충북(15),
+  - South Chungcheong 충남(16), North Jeolla 전북(17), South Jeolla 전남(18), North Gyeongsang 경북(19),
+  - South Gyeongsang 경남(20) Jeju 제주(21), Daegu 대구(22), Incheon 인천(23), Gwangju 광주(24) Daejeon 대전(25), Ulsan 울산(26) 경기북부(28)
+- BB: First issue year 최초 발급년도
+  - 00 ~ 99
+- CC: Serial number 일련번호
+- D: Checksum
+- E: Issuance round 발급회차
+
+### Example
+
+```js
+import { isKoDriverLicense } from 'doum';
+
+const licensegNumber = '';
+const licensegNumber2 = '11-12-1234567-89';
+const licensegNumber3 = '27-22-1234567-89';
+const licensegNumber4 = '20-99-12345687-89';
+const licensegNumber5 = '111-12-1234567-89';
+const licensegNumber6 = '25-56-1234567-89';
+const licensegNumber7 = '1-12-1234567-89';
+const licensegNumber8 = '11-12-124567-89';
+const licensegNumber9 = '22-12-1234567-81';
+
+console.log(isKoDriverLicense(licensegNumber)); // licensegNumber false
+console.log(isKoDriverLicense(licensegNumber2)); // licensegNumber2
+console.log(isKoDriverLicense(licensegNumber3)); // licensegNumber3 false
+console.log(isKoDriverLicense(licensegNumber4)); // licensegNumber4 false
+console.log(isKoDriverLicense(licensegNumber5)); // licensegNumber5 false
+console.log(isKoDriverLicense(licensegNumber6)); // licensegNumber6 true
+console.log(isKoDriverLicense(licensegNumber7)); // licensegNumber7 false
+console.log(isKoDriverLicense(licensegNumber8)); // licensegNumber8 false
+console.log(isKoDriverLicense(licensegNumber9)); // licensegNumber9 true
+```
+
+### Reference
+
+```js
+function isKoDriverLicense(driverLicense: string): boolean {}
+```
+
+### Importing
+
+```js
+import { isKoDriverLicense } from 'doum';
+```
+
+### Arguments
+
+- **driverLicense** _`string`_
