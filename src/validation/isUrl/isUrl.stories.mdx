@@ -1,0 +1,43 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="validation/isUrl" />
+
+# isUrl
+
+Check whether the string is URL type or not and return it.  
+문자열이 URL 타입인지 아닌지를 확인 후 반환합니다.
+
+### Example
+
+```js
+import { isUrl } from 'doum';
+
+const url = 'https://ttt';
+const url2 = 'abc';
+const url3 = 'https://한글도메인.com/';
+const url4 =
+  'https://www.test.com?prdNo=123&dispNo=312&NaPm=ct%3Djoh05t74%7Cci%3D71cf11951';
+const url5 = 'https://192.0.1.1';
+
+console.log('url', isUrl(url)); // url false
+console.log('url2', isUrl(url2)); // url2 false
+console.log('url3', isUrl(url3)); // url3 true
+console.log('url4', isUrl(url4)); // url4 true
+console.log('url5', isUrl(url5)); // url5 true
+```
+
+### Reference
+
+```js
+function isUrl(url: string): boolean {}
+```
+
+### Importing
+
+```js
+import { isUrl } from 'doum';
+```
+
+### Arguments
+
+- **url** _`string`_

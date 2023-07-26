@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "module": "es2015",
+      "esModuleInterop": true,
+      "moduleResolution": "nodenext"
+    },
+    "ts-node": {
+      "esm": true,
+      "experimentalSpecifierResolution": "node"
+    }
+  }

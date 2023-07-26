@@ -1,16 +1,17 @@
-// User
-export { isKoResRegNumber } from './users/isKoResRegNumber/isKoResRegNumber';
-export { isKoDriverLicense } from './users/isKoDriverLicense/isKoDriverLicense';
-export { isKoZipCode } from './users/isKoZipCode/isKoZipCode';
+// Ojbect
+export { renameKeys } from './object/renameKeys/renameKeys'
 
-// Web
-export { isEmail } from './web/isEmail/isEmail';
-export { isUrl } from './web/isUrl/isUrl';
-
-// Etc
-export { isSpace } from './etc/isSpace/isSpace';
-export { isStraight } from './etc/isStraight/isStraight';
-
-// Language
-export { isEng } from './language/isEng/isEng';
-export { isKor } from './language/isKor/isKor';
+// Validation
+// Validation > #Web
+export { isEmail } from './validation/isEmail/isEmail';
+export { isUrl } from './validation/isUrl/isUrl';
+// Validation > #User
+export { isKoResRegNumber } from './validation/isKoResRegNumber/isKoResRegNumber';
+export { isKoDriverLicense } from './validation/isKoDriverLicense/isKoDriverLicense';
+export { isKoZipCode } from './validation/isKoZipCode/isKoZipCode';
+// Validation > #Etc
+export { isSpace } from './validation/isSpace/isSpace';
+export { isStraight } from './validation/isStraight/isStraight';
+// Validation > #Language
+export { isEng } from './validation/isEng/isEng';
+export { isKor } from './validation/isKor/isKor';

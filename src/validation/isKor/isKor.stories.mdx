@@ -1,0 +1,44 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="validation/isKor" />
+
+# isKor
+
+Check if the string is in Korean only and return it  
+문자열이 한글로만 되있는지 확인 후 반환합니다.
+
+### Example
+
+```js
+import { isKor } from 'doum';
+
+const contents = '';
+const contents2 = '123456';
+const contents3 = '나이키코카콜라맥도날드베스킨라빈스삼십일';
+const contents4 = 'ㄱㄴ';
+const contents5 = '1ab나이키cdef1';
+const contents6 = 'ㄴㅏㅇㅣㅋㅣ';
+
+console.log('contents', isKor(contents)); // contents false
+console.log('contents2', isKor(contents2)); // contents2 false
+console.log('contents3', isKor(contents3)); // contents3 true
+console.log('contents4', isKor(contents4)); // contents4 true
+console.log('contents5', isKor(contents5)); // contents5 false
+console.log('contents6', isKor(contents6)); // contents6 false
+```
+
+### Reference
+
+```js
+function isKor(contents: string): boolean {}
+```
+
+### Importing
+
+```js
+import { isKor } from 'doum';
+```
+
+### Arguments
+
+- **contents** _`string`_

@@ -1,0 +1,54 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="object/renameKeys" />
+
+# renameKeys
+
+Key Map Object를 받아 변경하고싶은 키를 변경한다.
+
+### Example
+
+```js
+import { renameKeys } from 'doum';
+
+const originObject = {
+  a: '에이',
+  b: '비',
+  c: '씨',
+  d: '디',
+};
+
+console.log('example', renameKeys(originObject, { a: '에이', b: '비', c: '씨', d: '디' }))
+
+// example
+{
+  에이: '에이',
+  비: '비',
+  씨: '씨',
+  디: '디',
+};
+```
+
+### Reference
+
+```js
+function renameKeys(
+  obj: Record<string, unknown>,
+  keysMap: Record<string, string>
+): Record<string, unknown> 
+```
+
+### Importing
+
+```js
+import { renameKeys } from 'doum';
+```
+
+### Arguments
+
+- **obj** _`Record<string, unknown>`_  원본 오브젝트
+- **keysMap** _`Record<string, string>`_  변경될 키 오브젝트
+
+
+### Return
+- **변경된 오브젝트** _`Object`_

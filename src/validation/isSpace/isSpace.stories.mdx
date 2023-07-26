@@ -1,0 +1,38 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="validation/isSpace" />
+
+# isSpace
+
+Returns whether there is a space between characters.  
+문자 사이에 공백이 있는지를 환인 후 반환합니다.
+
+### Example
+
+```js
+import { isSpace } from 'doum';
+
+const string1 = 'test';
+const string2 = 'te st';
+const string3 = 'test ';
+
+console.log('string1', isSpace(string1)); // string1, false
+console.log('string2', isSpace(string2)); // string2, true
+console.log('string3', isSpace(string3)); // string3, true
+```
+
+### Reference
+
+```js
+function isSpace(string: string): boolean {}
+```
+
+### Importing
+
+```js
+import { isSpace } from 'doum';
+```
+
+### Arguments
+
+- **string** _`string`_

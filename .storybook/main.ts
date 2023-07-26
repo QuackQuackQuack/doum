@@ -1,12 +1,18 @@
-module.exports = {
-  stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
-  addons: ["@storybook/addon-links", "@storybook/addon-essentials", "@storybook/addon-interactions"],
+import type { StorybookConfig } from "@storybook/react-vite";
+const config: StorybookConfig = {
+  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
+  addons: [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    "@storybook/addon-interactions",
+  ],
   framework: {
-    name: '@storybook/react',
-    options: {}
+    name: "@storybook/react-vite",
+    options: {},
   },
-  typescript: {
-    reactDocgen: 'react-docgen',
+  docs: {
+    autodocs: "tag",
   },
   staticDirs: ['./public'],
 };
+export default config;
