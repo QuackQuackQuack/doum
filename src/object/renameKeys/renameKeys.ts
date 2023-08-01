@@ -9,9 +9,9 @@
  * @returns {Object}
  */
 export function renameKeys(
-  obj: Record<string, unknown>,
+  obj: Record<string, any>,
   keysMap: Record<string, string>
-): Record<string, unknown> {
+): Record<string, any> {
   return Object.keys(obj).reduce(
     (acc, key) => ({
       ...acc,

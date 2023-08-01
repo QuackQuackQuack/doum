@@ -1,0 +1,45 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="string/addCommas" />
+
+# addCommas
+
+Write the numbers in commas in thousand units.  
+숫자를 천단위씩 콤마로 표기한다.
+
+### Example
+
+```js
+import { addCommas } from 'doum';
+
+console.log('example1', addCommas(1)); // example1 1
+console.log('example2', addCommas(10)); // example2 10
+console.log('example3', addCommas(0.123456)); // example3 0.123,456
+console.log('example4', addCommas(1000)); // example4 1,000
+console.log('example5', addCommas(1000)); // example5 1,000
+console.log('example6', addCommas(1000000)); // example6 1,000,000
+console.log('example7', addCommas(1000000000)); // example7 1,000,000,000
+console.log('example8', addCommas(0)); // example8 0
+```
+
+### Reference
+
+```js
+export function addCommas(num: string | number): string {}
+```
+
+### Importing
+
+```js
+import { addCommas } from 'doum';
+```
+
+### Arguments
+
+- **num** _`string | number`_  숫자 문자(numeric characters) | 숫자(number)
+
+
+### Return
+- **콤마표기 숫자 문자(Write numeric characters in commas)** _`stirng`_
+
+

@@ -1,0 +1,40 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="string/removeCommas" />
+
+# removeCommas
+
+Replace the numbers in commas with regular numbers.  
+콤마로 표기된 숫자를 일반 숫자로 바꾼다.
+
+### Example
+
+```js
+import { removeCommas } from 'doum';
+
+console.log('example1', removeCommas(1)); // example1 1
+console.log('example2', removeCommas(10)); // example2 10
+console.log('example3', removeCommas(1,000)); // example3 1000
+console.log('example4', removeCommas(1,000,000)); // example4 1000000
+console.log('example5', removeCommas(1,000,000,000)); // example5 1000000000
+```
+
+### Reference
+
+```js
+function removeCommas(commasNum: string): string {}
+```
+
+### Importing
+
+```js
+import { removeCommas } from 'doum';
+```
+
+### Arguments
+
+- **commasNum** _`stirng`_  Write numeric characters in commas(콤마로 표기된 숫자 문자)
+
+
+### Return
+- **숫자 문자(numeric characters)** _`stirng`_

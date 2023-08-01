@@ -1,5 +1,9 @@
 // Ojbect
-export { renameKeys } from './object/renameKeys/renameKeys'
+export { renameKeys } from './object/renameKeys/renameKeys';
+
+// String
+export { addCommas } from './string/addCommas/addCommas';
+export { removeCommas } from './string/removeCommas/removeCommas';
 
 // Validation
 // Validation > #Web

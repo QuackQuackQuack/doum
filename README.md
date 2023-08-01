@@ -33,6 +33,10 @@ npm run storybook
 - `object`
   - [`renamekeys`](https://quackquackquack.github.io/doum/?path=/docs/object-renamekeys--docs)
 
+- `string`
+  - [`addCommas`](https://quackquackquack.github.io/doum/?path=/docs/string-addcommas--docs)
+  - [`removeCommas`](https://quackquackquack.github.io/doum/?path=/docs/string-removecommas--docs)
+
 - `validation`
   - [`isEmail`](https://quackquackquack.github.io/doum/?path=/docs/validation-isemail--docs)
   - [`isEng`](https://quackquackquack.github.io/doum/?path=/docs/validation-iseng--docs)
