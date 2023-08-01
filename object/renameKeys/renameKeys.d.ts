@@ -6,4 +6,4 @@
  * @param {Object} keysMap Keys Object
  * @returns {Object}
  */
-export declare function renameKeys(obj: Record<string, unknown>, keysMap: Record<string, string>): Record<string, unknown>;
+export declare function renameKeys(obj: Record<string, any>, keysMap: Record<string, string>): Record<string, any>;

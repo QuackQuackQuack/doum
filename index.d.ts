@@ -1,3 +1,6 @@
+export { renameKeys } from './object/renameKeys/renameKeys';
+export { addCommas } from './string/addCommas/addCommas';
+export { removeCommas } from './string/removeCommas/removeCommas';
 export { isEmail } from './validation/isEmail/isEmail';
 export { isUrl } from './validation/isUrl/isUrl';
 export { isKoResRegNumber } from './validation/isKoResRegNumber/isKoResRegNumber';
