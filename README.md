@@ -30,6 +30,9 @@ npm run storybook
 
 ## List
 
+- `array`
+  - [`chunkArray`](https://quackquackquack.github.io/doum/?path=/docs/array-chunkarray--docs)
+
 - `object`
   - [`renamekeys`](https://quackquackquack.github.io/doum/?path=/docs/object-renamekeys--docs)
 
