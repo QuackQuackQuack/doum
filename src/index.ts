@@ -1,3 +1,6 @@
+// Array
+export { chunkArray } from './array/chunkArray/chunkArray';
+
 // Ojbect
 export { renameKeys } from './object/renameKeys/renameKeys';
 
