@@ -1,3 +1,4 @@
+export { chunkArray } from './array/chunkArray/chunkArray';
 export { renameKeys } from './object/renameKeys/renameKeys';
 export { addCommas } from './string/addCommas/addCommas';
 export { removeCommas } from './string/removeCommas/removeCommas';
