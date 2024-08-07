@@ -57,5 +57,5 @@ QuackQuackQuack
 
 ## License
 
-Copyright (c) 2023 QuackQuackQuack Released under the MIT license
+Copyright (c) 2024 QuackQuackQuack Released under the MIT license
 
